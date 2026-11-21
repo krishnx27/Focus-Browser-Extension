@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stay Focused - FocusBoard</title>
+  <!-- Google Fonts: Cormorant Garamond & DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="blocked.css" />
+</head>
+<body>
+  <!-- Full coverage wallpaper background -->
+  <div id="wallpaper-background" class="wallpaper-background"></div>
+  <div class="overlay"></div>
+
+  <!-- Center Card -->
+  <main class="blocked-container">
+    <div class="blocked-card">
+      <div class="shield-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          <path d="M9 12l2 2 4-4"></path>
+        </svg>
+      </div>
+
+      <h1 class="blocked-heading">Take a Moment</h1>
+      <p class="blocked-subheading">This site is paused while Focus Mode is active.</p>
+
+      <div class="focus-reminder-box">
+        <span class="focus-reminder-tag">YOUR FOCUS FOR TODAY</span>
+        <p id="focus-reminder-text" class="focus-reminder-text">Stay focused on what matters.</p>
+      </div>
+
+      <div class="blocked-actions">
+        <button id="go-back-btn" class="btn btn-primary" type="button">
+          Go Back to Work
+        </button>
+        <button id="disable-focus-btn" class="btn btn-secondary" type="button">
+          Disable Focus Mode
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <script src="blocked.js"></script>
+</body>
+</html>

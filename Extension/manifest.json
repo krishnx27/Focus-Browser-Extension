@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "FocusBoard",
+  "version": "1.0.1",
+  "description": "A calm, minimal productivity dashboard for your new tab with focus mode distraction blocker.",
+  "permissions": [
+    "storage",
+    "declarativeNetRequest",
+    "activeTab",
+    "tabs"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "blocked.html",
+        "assets/*"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

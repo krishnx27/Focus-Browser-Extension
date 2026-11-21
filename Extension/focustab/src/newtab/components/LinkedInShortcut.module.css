@@ -1,0 +1,2 @@
+.shortcut { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.3rem 0.7rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15); border-radius: 6px; color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.8rem; transition: background 0.2s; }
+.shortcut:hover { background: rgba(255,255,255,0.2); color: #fff; }
